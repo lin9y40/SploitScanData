@@ -5,24 +5,22 @@ Automated CVE-PoC normalized data repository, updated by GitHub Actions CI.
 ## Structure
 
 ```
-output/
-  cves/
-    {year}/{Nxxx}/CVE-YYYY-NNNNN.json   # Normalized CVE data
-  .cvelist_state.json                     # Last processed cvelistV5 commit
-  .source_state.json                      # PoC source change tracking state
-  .rescan_state.json                      # Rescan queue state
-  run_summary.json                        # Last run summary
-.github/
-  workflows/
-    monitor-cvelist.yml                   # cvelistV5 monitor (every 2h)
-    monitor-poc-sources.yml               # PoC source monitor (every 6h)
+cves/
+  {year}/{Nxxx}/CVE-YYYY-NNNNN.json   # Normalized CVE data
+.cvelist_state.json                     # Last processed cvelistV5 commit
+.source_state.json                      # PoC source change tracking state
+.rescan_state.json                      # Rescan queue state
+run_summary.json                        # Last run summary
+.github/workflows/
+  monitor-cvelist.yml                   # cvelistV5 monitor (every 2h)
+  monitor-poc-sources.yml               # PoC source monitor (every 6h)
 ```
 
 ## Directory Convention
 
 CVE files follow cvelistV5 convention: `cves/{year}/{Nxxx}/CVE-YYYY-NNNNN.json`
 
-Where `{Nxxx}` = `{CVE_number // 1000}xxx` (e.g., CVE-2026-00008 ¡ú `0xxx`)
+Where `{Nxxx}` = `{CVE_number // 1000}xxx` (e.g., CVE-2026-00008 -> `0xxx`)
 
 ## Data Source
 

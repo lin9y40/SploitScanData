@@ -1,9 +1,10 @@
 {
-  "mode": "baseline-scan",
-  "timestamp": "2026-07-13T09:49:53.660150+00:00",
-  "total_cves": 364940,
-  "processed": 114133,
-  "skipped": 250807,
+  "mode": "monitor-cvelist",
+  "timestamp": "2026-07-13T10:27:14.473032+00:00",
+  "new_cves": 4,
+  "rescanned": 0,
+  "processed": 4,
+  "skipped": 0,
   "failed": 0,
-  "elapsed_seconds": 247.6
+  "last_commit": "54b86dcdf71ea2edc6eeb6bef56b4f375dfe8f45"
 }

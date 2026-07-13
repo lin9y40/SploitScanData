@@ -1,0 +1,81 @@
+name: PoC Sources Monitor
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+# Separate concurrency group from monitor-cvelist to avoid mutual cancellation.
+# Git push conflicts are handled by retry logic in the push step.
+concurrency:
+  group: sploitscan-poc-push
+  cancel-in-progress: true
+
+jobs:
+  poc-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.SOURCE_REPO_OWNER }}/${{ vars.SOURCE_REPO_NAME }}
+          token: ${{ secrets.CROSS_REPO_TOKEN }}
+          path: ./source
+          fetch-depth: 1
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          cd source
+          pip install -r requirements.txt
+
+      - name: Clone Poc-Monitor-Data
+        run: |
+          git clone --depth 1 https://github.com/PocMonitorBot/Poc-Monitor-Data.git ./poc-monitor-data
+
+      - name: Run PoC source monitor
+        env:
+          VULNCHECK_API_KEYS: ${{ secrets.VULNCHECK_API_KEYS }}
+          GITHUB_TOKENS: ${{ secrets.GH_TOKENS }}
+          POC_MONITOR_DATA_DIR: ${{ github.workspace }}/poc-monitor-data
+        run: |
+          cd source
+          python monitor.py \
+            --output ../output \
+            --mode monitor-poc \
+            --poc-monitor-dir ${{ github.workspace }}/poc-monitor-data
+
+      - name: Commit and push
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'github-actions[bot]' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'github-actions[bot]@users.noreply.github.com' }}"
+          git add output/ -f
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "PoC source monitor $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            # Retry push with rebase to handle conflicts from concurrent cvelist workflow
+            for i in 1 2 3; do
+              if git push; then
+                echo "Push succeeded on attempt $i"
+                break
+              else
+                echo "Push failed on attempt $i, pulling with rebase..."
+                git pull --rebase origin main
+                sleep 5
+              fi
+            done
+          fi

@@ -1,7 +1,9 @@
 {
-  "mode": "monitor-poc",
-  "timestamp": "2026-07-13T06:23:26.347971+00:00",
-  "changed_cves": 25,
-  "updated": 25,
-  "failed": 0
+  "mode": "baseline-scan",
+  "timestamp": "2026-07-13T09:49:53.660150+00:00",
+  "total_cves": 364940,
+  "processed": 114133,
+  "skipped": 250807,
+  "failed": 0,
+  "elapsed_seconds": 247.6
 }

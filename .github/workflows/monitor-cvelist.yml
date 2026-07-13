@@ -5,8 +5,9 @@ on:
     - cron: "0 */2 * * *"
   workflow_dispatch:
 
-# Separate concurrency group from monitor-poc-sources to avoid mutual cancellation.
+# Concurrency: separate from monitor-poc-sources to avoid mutual cancellation.
 # Git push conflicts are handled by retry logic in the push step.
+# Data is written to repo root (cves/ + state files), not output/ subdirectory.
 concurrency:
   group: sploitscan-cvelist-push
   cancel-in-progress: true
@@ -48,7 +49,7 @@ jobs:
 
       - name: Clone cvelistV5
         run: |
-          git clone --depth 1 https://github.com/CVEProject/cvelistV5.git ./cvelistV5
+          git clone --shallow-since="14 days ago" https://github.com/CVEProject/cvelistV5.git ./cvelistV5
 
       - name: Run cvelistV5 monitor + rescan
         env:

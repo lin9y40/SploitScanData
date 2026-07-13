@@ -2,14 +2,14 @@ name: PoC Sources Monitor
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 # Separate concurrency group from monitor-cvelist to avoid mutual cancellation.
 # Git push conflicts are handled by retry logic in the push step.
 concurrency:
   group: sploitscan-poc-push
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   poc-monitor:

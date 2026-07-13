@@ -2,7 +2,7 @@ name: cvelistV5 Monitor + Rescan
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 # Concurrency: separate from monitor-poc-sources to avoid mutual cancellation.
@@ -10,7 +10,7 @@ on:
 # Data is written to repo root (cves/ + state files), not output/ subdirectory.
 concurrency:
   group: sploitscan-cvelist-push
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   monitor:

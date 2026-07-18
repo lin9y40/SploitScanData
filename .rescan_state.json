@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2026-9734",
       "first_seen": "2026-07-18T05:26:56.957133+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-07-18T06:26:56.957133+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-07-18T07:49:49.006493+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-9103",

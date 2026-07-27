@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2026-9830",
       "first_seen": "2026-07-27T06:31:46.912119+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-07-27T07:31:46.912119+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-07-27T10:44:00.316543+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-7007",

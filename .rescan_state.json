@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2026-2411",
       "first_seen": "2026-08-01T13:20:13.344549+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-01T14:20:13.344549+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-01T15:01:45.003536+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-2916",

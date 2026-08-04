@@ -14895,7 +14895,7 @@
     "CVE-2025-26466",
     "CVE-2025-26794"
   ],
-  "last_updated": "2026-08-04T18:12:45.335536+00:00",
+  "last_updated": "2026-08-04T20:10:30.120848+00:00",
   "nuclei_commit_sha": "fa94b08096d4ab81e521778d8199422e349aa995",
   "metasploit_commit_sha": "181a6d15c2876775f1bab073477a9318885378a4",
   "zeroday_commit_sha": "fd72a6f55a806b351291ff5b2508a1c2b331ef60"

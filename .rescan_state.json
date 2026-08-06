@@ -8,11 +8,16 @@
           "time": "2026-08-05T19:30:23.950807+00:00",
           "result": "no_poc",
           "scan_number": 1
+        },
+        {
+          "time": "2026-08-06T00:05:17.746922+00:00",
+          "result": "has_poc",
+          "scan_number": 2
         }
       ],
-      "scan_count": 1,
-      "next_scan": "2026-08-05T23:30:47.061670+00:00",
-      "status": "active"
+      "scan_count": 2,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-7657",

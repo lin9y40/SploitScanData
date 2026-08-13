@@ -79,10 +79,16 @@
     {
       "cve_id": "CVE-2022-4993",
       "first_seen": "2026-08-13T17:07:33.829336+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-13T18:07:33.829336+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-13T19:04:44.591506+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-6387",

@@ -77,6 +77,14 @@
       "status": "active"
     },
     {
+      "cve_id": "CVE-2026-8715",
+      "first_seen": "2026-08-13T20:44:10.395752+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-08-13T21:44:10.395752+00:00",
+      "status": "active"
+    },
+    {
       "cve_id": "CVE-2022-4993",
       "first_seen": "2026-08-13T17:07:33.829336+00:00",
       "scan_history": [

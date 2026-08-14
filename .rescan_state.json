@@ -13,11 +13,16 @@
           "time": "2026-08-13T14:59:25.328020+00:00",
           "result": "no_poc",
           "scan_number": 2
+        },
+        {
+          "time": "2026-08-14T08:17:24.706209+00:00",
+          "result": "has_poc",
+          "scan_number": 3
         }
       ],
-      "scan_count": 2,
-      "next_scan": "2026-08-14T07:45:58.889324+00:00",
-      "status": "active"
+      "scan_count": 3,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-8667",
@@ -32,11 +37,16 @@
           "time": "2026-08-13T14:59:26.265282+00:00",
           "result": "no_poc",
           "scan_number": 2
+        },
+        {
+          "time": "2026-08-14T08:17:26.014125+00:00",
+          "result": "has_poc",
+          "scan_number": 3
         }
       ],
-      "scan_count": 2,
-      "next_scan": "2026-08-14T07:45:59.886223+00:00",
-      "status": "active"
+      "scan_count": 3,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-8917",
@@ -51,11 +61,16 @@
           "time": "2026-08-13T14:59:27.314689+00:00",
           "result": "no_poc",
           "scan_number": 2
+        },
+        {
+          "time": "2026-08-14T08:17:27.044159+00:00",
+          "result": "has_poc",
+          "scan_number": 3
         }
       ],
-      "scan_count": 2,
-      "next_scan": "2026-08-14T07:46:01.895739+00:00",
-      "status": "active"
+      "scan_count": 3,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-9214",
@@ -70,11 +85,16 @@
           "time": "2026-08-13T14:59:29.699344+00:00",
           "result": "no_poc",
           "scan_number": 2
+        },
+        {
+          "time": "2026-08-14T08:17:28.198012+00:00",
+          "result": "has_poc",
+          "scan_number": 3
         }
       ],
-      "scan_count": 2,
-      "next_scan": "2026-08-14T07:46:02.886951+00:00",
-      "status": "active"
+      "scan_count": 3,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-3883",

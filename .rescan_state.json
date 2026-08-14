@@ -79,10 +79,16 @@
     {
       "cve_id": "CVE-2026-3883",
       "first_seen": "2026-08-13T22:43:02.038218+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-13T23:43:02.038218+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-14T01:53:45.257561+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-8715",

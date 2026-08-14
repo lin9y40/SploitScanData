@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2025-7639",
       "first_seen": "2026-08-14T18:54:53.341049+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-14T19:54:53.341049+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-14T20:32:05.326128+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2023-7347",

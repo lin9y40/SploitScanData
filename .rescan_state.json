@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2026-8840",
       "first_seen": "2026-08-15T02:54:00.451848+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-15T03:54:00.451848+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-15T04:31:25.789521+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2025-7639",

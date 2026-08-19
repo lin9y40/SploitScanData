@@ -1,6 +1,14 @@
 {
   "rescan_queue": [
     {
+      "cve_id": "CVE-2026-8810",
+      "first_seen": "2026-08-19T06:43:19.422516+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-08-19T07:43:19.422516+00:00",
+      "status": "active"
+    },
+    {
       "cve_id": "CVE-2025-9210",
       "first_seen": "2026-08-18T19:30:52.371125+00:00",
       "scan_history": [

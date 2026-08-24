@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2026-9254",
       "first_seen": "2026-08-24T18:41:02.401476+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-24T19:41:02.401476+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-24T20:31:34.094686+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-9728",

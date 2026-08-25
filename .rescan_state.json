@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2025-9878",
       "first_seen": "2026-08-25T03:00:02.577567+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-08-25T04:00:02.577567+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-08-25T04:39:59.379943+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-5006",

@@ -1,6 +1,6 @@
 {
-  "exploitdb_commit_sha": "a408f6760a7bd2da7e644aa0954e9175fce0d14c",
-  "exploitdb_last_max_id": 52658,
+  "exploitdb_commit_sha": "760758183918a185b40b783308359bbeef86362b",
+  "exploitdb_last_max_id": 52666,
   "nuclei_known_cves": [
     "CVE-2000-0114",
     "CVE-2000-0760",
@@ -15021,7 +15021,7 @@
     "CVE-2025-26466",
     "CVE-2025-26794"
   ],
-  "last_updated": "2026-09-01T00:02:01.214586+00:00",
+  "last_updated": "2026-09-01T05:30:53.411034+00:00",
   "nuclei_commit_sha": "691b92b53b75fbb00b68a01de5c1d715267774cf",
   "metasploit_commit_sha": "e698ea413163b31759d78603e5018552bf14ae8e",
   "zeroday_commit_sha": "fd72a6f55a806b351291ff5b2508a1c2b331ef60"

@@ -1,7 +1,10 @@
 {
-  "mode": "monitor-poc",
-  "timestamp": "2026-09-10T21:47:34.019745+00:00",
-  "changed_cves": 20,
-  "updated": 20,
-  "failed": 0
+  "mode": "monitor-cvelist",
+  "timestamp": "2026-09-10T23:47:38.798779+00:00",
+  "new_cves": 1,
+  "rescanned": 8,
+  "processed": 9,
+  "skipped": 0,
+  "failed": 0,
+  "last_commit": "acbc10f446df3d57b41c2e3ae4674d7aa87fd106"
 }

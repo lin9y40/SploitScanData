@@ -1,7 +1,7 @@
 {
   "mode": "monitor-poc",
-  "timestamp": "2026-09-10T00:28:10.518598+00:00",
-  "changed_cves": 18,
-  "updated": 18,
+  "timestamp": "2026-09-10T05:08:30.480074+00:00",
+  "changed_cves": 21,
+  "updated": 21,
   "failed": 0
 }

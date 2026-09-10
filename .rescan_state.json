@@ -1,20 +1,120 @@
 {
   "rescan_queue": [
     {
-      "cve_id": "CVE-2026-0310",
-      "first_seen": "2026-09-10T05:40:38.333964+00:00",
+      "cve_id": "CVE-2026-0302",
+      "first_seen": "2026-09-10T10:44:00.961812+00:00",
       "scan_history": [],
       "scan_count": 0,
-      "next_scan": "2026-09-10T06:40:38.333964+00:00",
+      "next_scan": "2026-09-10T11:44:00.961812+00:00",
       "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0303",
+      "first_seen": "2026-09-10T10:44:01.779702+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:01.779702+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0304",
+      "first_seen": "2026-09-10T10:44:02.899571+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:02.899571+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0305",
+      "first_seen": "2026-09-10T10:44:03.617583+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:03.617583+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0306",
+      "first_seen": "2026-09-10T10:44:04.668396+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:04.668396+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0307",
+      "first_seen": "2026-09-10T10:44:05.725880+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:05.725880+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0308",
+      "first_seen": "2026-09-10T10:44:06.786759+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:06.786759+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0309",
+      "first_seen": "2026-09-10T10:44:07.953789+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:07.953789+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-5399",
+      "first_seen": "2026-09-10T10:44:10.349412+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:10.349412+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-7188",
+      "first_seen": "2026-09-10T10:44:11.501333+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:11.501333+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-8323",
+      "first_seen": "2026-09-10T10:44:12.450590+00:00",
+      "scan_history": [],
+      "scan_count": 0,
+      "next_scan": "2026-09-10T11:44:12.450590+00:00",
+      "status": "active"
+    },
+    {
+      "cve_id": "CVE-2026-0310",
+      "first_seen": "2026-09-10T05:40:38.333964+00:00",
+      "scan_history": [
+        {
+          "time": "2026-09-10T10:44:09.031954+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-4657",
       "first_seen": "2026-09-10T05:40:39.783646+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-09-10T06:40:39.783646+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-09-10T10:44:10.125512+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-8044",

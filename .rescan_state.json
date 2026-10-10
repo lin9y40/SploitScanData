@@ -3,10 +3,16 @@
     {
       "cve_id": "CVE-2025-8457",
       "first_seen": "2026-10-09T22:21:46.774055+00:00",
-      "scan_history": [],
-      "scan_count": 0,
-      "next_scan": "2026-10-09T23:21:46.774055+00:00",
-      "status": "active"
+      "scan_history": [
+        {
+          "time": "2026-10-10T02:09:25.864950+00:00",
+          "result": "has_poc",
+          "scan_number": 1
+        }
+      ],
+      "scan_count": 1,
+      "next_scan": null,
+      "status": "completed"
     },
     {
       "cve_id": "CVE-2026-8374",
